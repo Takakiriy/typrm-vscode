@@ -1,0 +1,12 @@
+Install development environment:
+Build:
+    npm run compile
+Debug:
+    (F5 key)
+Make package:
+    (Connect your PC to internet.)
+    vsce package
+Install extension:
+    code --install-extension  ./typrm-0.0.2.vsix
+(Reference):
+    #ref: ./package.json >> scripts

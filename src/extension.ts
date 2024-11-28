@@ -7,9 +7,12 @@ import * as vscode from 'vscode';
 export function activate(context: vscode.ExtensionContext) {
 	let disposable = vscode.commands.registerCommand('typrm.paste', async (textEditor, edit) => {
 		const clipboardText = await vscode.env.clipboard.readText();
-		const pasteText = clipboardText.replace(/#keyword:/g, '#search:');
 		const editor = vscode.window.activeTextEditor!;
 		const workspaceEdit = new vscode.WorkspaceEdit();
+
+		const pasteText = clipboardText
+			.replace(/#keyword:/g, '#search:')
+			.replace(/\/home\/[^/]+\//g, '~/');
 
 		workspaceEdit.replace(editor.document.uri, editor.selection, pasteText);
 		await vscode.workspace.applyEdit(workspaceEdit);

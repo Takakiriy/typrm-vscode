@@ -1,4 +1,4 @@
-[日本語 README](./README-jp.md)
+[日本語 README] ./README-jp.md
 
 # typrm extensions
 
@@ -26,7 +26,15 @@ If you copy the following text:
 
 Recommended keybinding is `Shift + Ctrl + V`.
 
+## Development
+
+See ./specifications.yaml file.
+
 ## Release Notes
+
+### 0.0.2
+
+Add function to replace /home/____/ with ~ to the search tag paste command.
 
 ### 0.0.1
 

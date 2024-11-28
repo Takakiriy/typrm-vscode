@@ -24,7 +24,15 @@ Visual Studio Code 用 typrm 拡張機能。
 
 推奨するキーの割り当ては、`Shift + Ctrl + V` です.
 
+## 開発
+
+./specifications.yaml ファイルを参照。
+
 ## リリースノート
+
+### 0.0.2
+
+search tag paste コマンドに、/home/____/ を ~ に置き換える機能を追加。
 
 ### 0.0.1
 
